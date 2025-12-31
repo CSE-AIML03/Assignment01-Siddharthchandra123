@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg: black;
+            --accent: #b7873a;
+            --text: azure;
+            --muted: #f5e6d0;
+        }
+        html,body{height:100%;
+            margin:0;
+            font-family:Segoe UI, Roboto, Arial, sans-serif;
+            background:burlywood;
+            color:#222}
+        /* Navbar */
+        .navbar{display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:1rem;
+            padding:0.6rem 1rem;
+            background:var(--bg);
+            color:var(--text);}
+        .navbar .logo{display:flex;
+            align-items:center;gap:0.6rem;font-weight:700;font-size:1.25rem;color:var(--bg);background:var(--accent);padding:0.4rem 0.8rem;border-radius:6px}
+        .navbar .logo span{color:var(--text);}
+        .nav-links{display:flex;gap:0.5rem;list-style:none;margin:0;padding:0}
+        .nav-links li{display:inline-block}
+        .nav-links a{display:inline-block;padding:0.5rem 0.75rem;color:var(--bg);background:var(--muted);text-decoration:none;border-radius:4px;font-size:0.95rem}
+        .nav-links a:hover{filter:brightness(0.95);font-weight:600}
+        /* Toggle (hamburger) */
+        .nav-toggle{display:none;background:transparent;border:0;color:var(--text);cursor:pointer;padding:0.4rem;border-radius:6px}
+        .nav-toggle:focus{outline:2px solid #fff;outline-offset:2px}
+        .nav-toggle .bar{display:block;width:22px;height:2px;background:var(--text);margin:4px 0;border-radius:2px}
+
+        /* Mobile styles */
+        @media (max-width:768px){
+            .nav-toggle{display:block}
+            .nav-links{position:absolute;left:0;right:0;top:100%;background:var(--bg);flex-direction:column;padding:0.5rem;gap:0.25rem;transform-origin:top;transition:transform 220ms ease,opacity 200ms ease;transform:scaleY(0);opacity:0;pointer-events:none}
+            .nav-links.open{transform:scaleY(1);opacity:1;pointer-events:auto}
+            .nav-links a{background:transparent;color:var(--text);padding:0.75rem;text-align:left}
+            .navbar{position:relative}
+        }
+        /* Utility */
+        .sr-only{position:absolute;
+            width:1px;
+            height:1px;
+            padding:0;
+            margin:-1px;
+            overflow:hidden;
+            clip:rect(0,0,0,0);
+            white-space:nowrap;
+            border:0}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" aria-hidden="false"   ><span>NavBar</span></div>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav>
+            <ul id="primary-navigation" class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
