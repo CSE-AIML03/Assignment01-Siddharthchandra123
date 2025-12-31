@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon WebPage</title>
+    <style>
+        main{
+            display:grid;
+            grid-template-columns: auto auto;
+            gap:0px;
+        }
+        .nav1:hover{
+            cursor: pointer;
+        }
+        #header{
+            display:grid;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto  auto ;
+            gap:0px;
+            background-color: black;
+            color:white;
+            font-size: 5px;
+        }
+        #logo{
+            width:100%;
+            height:20px;
+            margin:auto auto;
+        }
+        .location{
+            width:10px;
+            display:inline-block;
+        }
+        p{
+            display:inline;
+            font-size:5px;
+        }
+        .padd{
+            padding:5px 3px 2px 4px;
+        }
+        #nav{
+            display:grid;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+        }
+        .nav1{
+            background-color: #232F3E;
+            color:white;
+            /* border:1px solid black; */
+            padding:3px 3px 2px 3px;
+        }
+        .nav1:hover{
+            border:1px solid white;
+            background-color: black;
+            color:white;
+            text-decoration: underline;          
+            border-radius: 5px;
+        }
+        .nav2{
+            padding-left:30px;
+            grid-column-start: 13;
+            grid-column-end: 17;
+        }
+        #body1{
+            grid-column-start:1;
+            grid-column-end:3;
+            height:350px;
+        }
+        .body{
+            position:relative;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .slide{
+            position:absolute;
+            height:340px;
+            width:100%;
+        }
+        .slide:nth-child(2):hover{
+            transform: translateX(-100%);
+            transition: 2s;
+        }
+        #box{
+            display:grid;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 15px;
+            /* background-color: lightgreen; */
+        }
+        input{
+            background-image: url(https://img.freepik.com/premium-vector/magnifying-glass-icon-yellow-background_322958-1735.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+        }
+        .write{
+            border:1px solid black;
+            background-color: white;
+            color:black;
+            padding-left: 20px;
+            column-gap:  5px;;
+            display:grid;
+            grid-template-columns: auto auto;
+            border-radius: 5px;
+        }
+        section.write img{
+            display:inline;
+            width:45%;
+            margin-right:5px;
+        }
+        div#box p{
+            font-size: 10px;
+            text-decoration: solid;
+        }
+        section.write h4{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #footer{
+            margin-top:10px;
+            border:1px solid black;
+            border-radius: 5px;
+            padding-top:3px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display:grid;
+            color:white;
+            grid-template-columns: auto auto auto auto;
+            background-color:#232F3E ;
+        }
+        .in{
+            padding:5px 0px 30px 5px;
+            font-size: 14px;
+        }
+        #footer span{
+               grid-column-start: 1;
+               grid-column-end: 5;
+               text-align: center;
+               color:white;
+               background-color: #232F3E;
+               border-bottom: 1px solid white;
+               border-radius: 5px;
+        }
+        a{
+            color:white;
+            border-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+      <div id="header">
+        <section class="padd"><img src="	https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2020/08/amazon-ap2-1597424880.jpg" alt="cruppted" id="logo"></section>
+        <section class="padd"><img src="https://static.vecteezy.com/system/resources/previews/000/440/781/non_2x/location-vector-icon.jpg" alt="cruppted" class="location"><p>Diliver To Delhi 110001<br>Update location</p></section>
+        <section style="grid-column-start: 3; grid-column-end: 7;"><input type="search" placeholder="search amazon.in" style="width:600px;"></section>
+        <section class="padd"><img src="	https://cdn.pixabay.com/photo/2020/07/04/08/29/indian-flag-5368686_640.jpg" alt="cruppted" class="location" > <p>EN</p></section>
+        <section class="padd"><p>Hello Sign in <br>Account and Lists</p></section>
+        <section class="padd"><p>Returns and Orders</p></section>
+        <section class="padd"><img src="https://image.shutterstock.com/image-illustration/…ping-trolley-cart-icon-black-260nw-1007492344.jpg" alt="" class="location"><p>Cart</p></section>
+      </div>
+      <div id="nav">
+        <section class="nav1"><img src="	https://www.shutterstock.com/image-vector/hamburger-menu-web-icon-white-260nw-1249309132.jpg" alt="" class="location"><h4 style="display:inline-block;">All</h4></section>
+        <section class="nav1"><h4>fresh</h4></section>
+        <section class="nav1"><h4>Mx player</h4></section>
+        <section class="nav1"><h4>Sell</h4></section>
+        <section class="nav1"><h4>Best Seller</h4></section>
+        <section class="nav1"><h4>Mobiles</h4></section>
+        <section class="nav1"><h4>Today's Delas</h4></section>
+        <section class="nav1"><h4>Customer Service</h4></section>
+        <section class="nav1"><h4>Prime</h4></section>
+        <section class="nav1"><h4>Amazon Pay</h4></section>
+        <section class="nav1"><h4>New Release</h4></section>
+        <section class="nav1"><h4>Electronic</h4></section>
+        <section class="nav1 nav2"><img src="/image/logo.png" alt="cruppted" style="width:250px; height:25px; background-color: darkblue; border-radius:5px;"></section>
+      </div>
+      <div id="body1">
+        <div class="body">
+            <img src="	https://cdn.grabon.in/gograbon/images/web-images/uploads/1727176405213.jpg" alt="" class="slide">
+        <img src="	https://cdn.beebom.com/content/2025/09/Amazon-Great-Indian-Festival-Sale-2025.jpg" alt="cruppted" class="slide">
+        </div>
+      </div>
+      <div id="box">
+        <section class="write"><h4>Revamp Your home in style</h4>
+            <img src="https://stylesatlife.com/wp-content/uploads/2019/05/Yellow-and-Grey-Cotton-Bedsheet-Design.jpg" alt="">
+            <img src="https://www.prlog.org/12984897-room-decoration-items.jpg" alt="">
+            <p>Cushion & Bedsheet</p><p>Decorative items </p>
+        </section>
+        <section class="write"><h4>Bulk order disocunt +Up to 18% GST saving</h4>
+        <img src="https://cdn.recycledevice.com/device/8863.jpeg" alt=""><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6288/6288980_sd.jpg" alt="">
+    <p>  Laptops </p> <p> Air Cooker</p></section>
+        <section class="write"><h4>Appliance For your Home | Up to 55% off</h4>
+        <img src="https://img.freepik.com/premium-photo/air-conditio…-white-background-3d-render-image_943642-7276.jpg" alt=""><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6131/6131415ld.jpg" alt="">
+    <p>Air Conditioner </p><p>Refrigerator </p></section>
+        <section class="write"><h4>Starting 49| Deals on home essential </h4>
+        <img src="https://www.maid4condos.com/content/uploads/2018/10/2-1920x1353.jpg" alt=""><img src="https://www.unionsourcechina.com/wp-content/uploads/2023/12/%E4%B8%BB%E5%9B%BE-02-1.jpg" alt="">
+    <p>Cleaning Accesories </p><p>Bathroom Accesories </p></section>
+      </div>
+      <div id="footer">
+        <span><button style="background-color: #232F3E;"><a href="#header">Back To Top</a></button></span>
+         <section class="in"><h3>Get to Known Us</h3>About Amazon<br>Career<br>Press Release<br>Amazon Science</section>
+         <section class="in"><h3>Connect with Us</h3>Facebook<br>Twiiter<br>Instagram</section>
+         <section class="in"><h3>Make Money with us</h3>Sell on Amazon<br>Sell under Amazon Accelerator <br>Protect and Build your Brand<br>Amazon Global Selling <br> Supply to Amazon <br>Beome a Affiliate<br>Fulfilment By Amazon<br>Advertise Your Product<br>Amazon Pay on Merchants</section>
+         <section class="in"><h3>Let Help You</h3>Your Account<br>Return Center<br>Recalls and Product Safety Alert<br>100% Purchase Protection <br> Amazon App Download <br>Help</section>
+      </div>
+    </main>
+</body>
+</html>
